@@ -17,8 +17,8 @@ const Privacy = () => {
                     {t("Nous collectons les informations nécessaires à la fourniture de nos services, notamment : votre adresse e-mail (lors de l'inscription), les informations de paiement (traitées par un tiers sécurisé) et vos préférences de visionnage pour personnaliser vos recommandations.")}
                 </p>
                 <ul>
-                    <li>🔐 **{t("Données d'Inscription")}** : Nom d'utilisateur, E-mail.</li>
-                    <li>📊 **{t("Données d'Utilisation")}** : Historique de visionnage, recherches effectuées, appareils utilisés.</li>
+                    <li>🔐 {t("Données d'Inscription")}** : Nom d'utilisateur, E-mail.</li>
+                    <li>📊 {t("Données d'Utilisation")}** : Historique de visionnage, recherches effectuées, appareils utilisés.</li>
                 </ul>
             </section>
 
