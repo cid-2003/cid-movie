@@ -10,7 +10,7 @@ import * as Config from "./constants/Config";
 
 function App() {
   return (
-    <BrowserRouter basename={`/${Config.HOME_PAGE}`}>
+    <BrowserRouter>
       <Header />
 
       <AppRoutes />
