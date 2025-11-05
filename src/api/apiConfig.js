@@ -1,14 +1,12 @@
 const apiConfig = {
     // URL de base de l'API TMDB
     baseURL: "https://api.themoviedb.org/3/",
-    // Clé d'API (doit être masquée dans un vrai projet!)
-    apiKey: "100df2124cba3ce4bf659cff601a2eff",
+    apiKey: import.meta.env.VITE_TMDB_API_KEY,  
     
     // Construit le chemin d'API avec le code de langue
     getApiPath: (path, languageCode = 'en-US') => {
-        // Supprime le '/' initial si présent (simplification)
         const formattedPath = path.startsWith('/') ? path.substring(1) : path;
-        // Retourne le chemin formaté sans la clé API
+        // Retourne le chemin formaté SANS la clé API (elle doit être ajoutée par tmdbApi.js)
         return `/${formattedPath}?language=${languageCode}`; 
     },
 

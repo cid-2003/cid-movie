@@ -41,7 +41,7 @@ const CastList = (props) => {
     <div className="casts-list">
       <div className="casts-list__wrapper">
         {cast.map((item) => (
-          // 💡 Utilisation de item.credit_id ou item.id comme clé, plus stable que l'index
+          // Utilisation de item.credit_id ou item.id comme clé, plus stable que l'index
           <div className="cast__item" key={item.credit_id || item.id}>
             <div
               className="image"
